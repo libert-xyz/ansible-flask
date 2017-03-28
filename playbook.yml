@@ -1,0 +1,7 @@
+---
+- hosts: baseApp
+  become: yes
+  become_user: root
+  roles:
+    - flask
+    - nginx
