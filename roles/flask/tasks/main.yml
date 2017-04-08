@@ -111,11 +111,11 @@
     path: /etc/uwsgi/vassals
     state: directory
 
-- name: symbolic link to UwsGI.ini
-  file:
-    src: "{{ application_dir }}/uwsgi.ini"
-    dest: /etc/uwsgi/vassals/uwsgi.ini
-    state: link
+# - name: symbolic link to UwsGI.ini
+#   file:
+#     src: "{{ application_dir }}/uwsgi.ini"
+#     dest: /etc/uwsgi/vassals/uwsgi.ini
+#     state: link
 
 - name: uWSGI Configuration
   template:
